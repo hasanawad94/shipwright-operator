@@ -217,7 +217,11 @@ kustomize: ## Download kustomize locally if necessary.
 ENVTEST = $(shell pwd)/bin/setup-envtest
 .PHONY: envtest
 envtest: ## Download envtest-setup locally if necessary.
+<<<<<<< HEAD
 	$(call go-get-tool,$(ENVTEST),sigs.k8s.io/controller-runtime/tools/setup-envtest@release-0.21)
+=======
+	$(call go-get-tool,$(ENVTEST),sigs.k8s.io/controller-runtime/tools/setup-envtest@release-0.22)
+>>>>>>> 117d8522 (chore: bump envtest version)
 
 
 OPERATOR_SDK = $(shell pwd)/bin/operator-sdk
